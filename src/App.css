@@ -1,0 +1,900 @@
+*{
+  font: Lucida Grande;
+  scroll-behavior: smooth;
+}
+
+
+.Background::-webkit-scrollbar {
+  display: none;
+}
+
+.Background{
+  background-color: #f6f9fc;
+  cursor: auto;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.mainshadow{
+  width: 100vw;
+  display: block;
+  top: 550px;
+  position: absolute;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.shadow{
+  cursor: url('/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/aero_arrow_black.cur'), auto;
+  background-color: #5a5d7a;
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 585px;
+  border-radius: 7px;
+  box-shadow: 0px 5px 10px 1px grey
+}
+
+
+.terminal-nav{
+  display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 6px;
+  background-color: #e4e3e5;
+  width: 1000px;
+  height: 28px;
+}
+
+
+
+.terminal-content{
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  display: block;
+  font: 20px;
+  width: 900px;
+  height: 450px;
+}
+
+.terminal-content p{
+  padding-bottom: 20px;
+  font-family: Monaco,Consolas,Lucida Console,monospace;
+  color: white;
+}
+
+.lasttext{
+  display: block;
+  font: 20px;
+  width: 900px;
+  font-family: Monaco,Consolas,Lucida Console,monospace;
+  color: white;
+}
+
+.animate{
+  margin-top: 0%;
+  height: 1px;
+  width: 187px;
+  border-right: 10px solid rgba(255,255,255,.75);
+  animation:blinkText 1000ms steps(2) infinite normal;
+}
+
+@keyframes blinkText{
+  from{border-right-color: #ffffff;}
+  to{border-right-color: transparent;}
+}
+
+
+.terminal-nav p {
+  font-family: Monaco,Consolas,Lucida Console,monospace;
+  color: black;
+  padding-top: 4px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+
+.Container{
+  background-color: grey;
+  display: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 30px;
+  position: absolute;
+  width: 1000px;
+  height: 560px;
+  
+}
+
+.nav_bar{
+  top: 0px;
+  position: absolute;
+  display: none;
+  font: 18px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 6px;
+  border-bottom: 2px solid black;
+  background-color: #e4e3e5;
+  height: 3.7vh;
+  min-width: 1000px;
+  height: 28px;
+}
+
+._{
+  position: relative;
+  height: 0px;
+  top: -19px;
+}
+
+.Logo_container{
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  margin-left: 25px;
+  padding-top: 2px;
+  margin-right: 8px;
+}
+
+.Logo_black{
+  
+  margin-left: 2%;
+  height: 58%;
+  position: absolute;
+}
+
+.Logo{
+  padding-left: 2px;
+  height: 60%;
+  margin-bottom: 1.5px;
+  position: relative;
+  -webkit-filter: drop-shadow(1px 1px 0.5px rgb(32, 32, 32));
+
+}
+.Logo_content{
+  display: none;
+  position: absolute;
+  background-color: #e4e3e5;
+  min-width: 166px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 13;
+  border: solid 1.5px black;
+  border-right: solid 2.5px black;
+  border-bottom: solid 2.5px black;
+}
+.Logo_content a {
+  color: black;
+  padding: 10px 14px;
+  font: 12px Lucida Grande;
+  text-decoration: none;
+  display: block;
+}
+.Logo_content a:hover {
+  background-color: black;
+  color: white
+}
+.Logo_container:hover .Logo_content {
+  display: block;
+}
+.Logo_container:hover .Logo{
+  opacity: 0;
+  background: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/Apple_logo_black.png");
+  display: inline;
+}
+
+
+
+.Filebtn{
+  width: 50px;
+  background-color: #e4e3e5;
+  color: black;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  height: 28px;
+}
+
+.File{
+  
+  position: relative;
+  display: inline-block; 
+}
+
+.File_content {
+  display: none;
+  position: absolute;
+  background-color: #e4e3e5;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 13;
+  border: solid 1.5px black;
+  border-right: solid 2.5px black;
+  border-bottom: solid 2.5px black;
+}
+
+.File_content a {
+  color: black;
+  padding: 10px 14px;
+  font: 12px Lucida Grande;
+  text-decoration: none;
+  display: block;
+}
+
+.File_content a:hover {
+  background-color: black;
+  color: white
+}
+
+.File:hover .File_content {
+  display: block;
+}
+
+.File:hover .Filebtn{
+  background-color: black;
+  color: white;
+}
+
+.Editbtn{
+  width: 50px;
+  background-color: #e4e3e5;
+  color: black;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  height: 28px;
+}
+
+.Edit{
+  position: relative;
+  display: inline-block; 
+}
+
+.Edit_content {
+  display: none;
+  position: absolute;
+  background-color: #e4e3e5;
+  min-width: 125px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 13;
+  border: solid 1.5px black;
+  border-right: solid 2.5px black;
+  border-bottom: solid 2.5px black;
+}
+
+.Edit_content a {
+  color: black;
+  padding: 10px 14px;
+  font: 12px Lucida Grande;
+  text-decoration: none;
+  display: block;
+}
+
+.Edit_content a:hover {
+  background-color: black;
+  color: white
+}
+
+.Edit:hover .Edit_content {
+  display: block;
+}
+
+.Edit:hover .Editbtn{
+  background-color: black;
+  color: white;
+}
+
+.Viewbtn{
+  width: 50px;
+  background-color: #e4e3e5;
+  color: black;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  height: 28px;
+}
+
+.View{
+  
+  position: relative;
+  display: inline-block; 
+}
+
+.View_content {
+  display: none;
+  position: absolute;
+  background-color: #e4e3e5;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 13;
+  border: solid 1.5px black;
+  border-right: solid 2.5px black;
+  border-bottom: solid 2.5px black;
+}
+
+.View_content a {
+  color: black;
+  padding: 10px 14px;
+  font: 12px Lucida Grande;
+  text-decoration: none;
+  display: block;
+}
+
+.View_content a:hover {
+  background-color: black;
+  color: white
+}
+
+.View:hover .View_content {
+  display: block;
+}
+
+.View:hover .Viewbtn{
+  background-color: black;
+  color: white;
+}
+
+.Specialbtn{
+  width: 80px;
+  background-color: #e4e3e5;
+  color: black;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  height: 28px;
+}
+
+.Special{
+  
+  position: relative;
+  display: inline-block; 
+}
+
+.Special_content {
+  display: none;
+  position: absolute;
+  background-color: #e4e3e5;
+  min-width: 136px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 13;
+  border: solid 1.5px black;
+  border-right: solid 2.5px black;
+  border-bottom: solid 2.5px black;
+}
+
+.Special_content a {
+  color: black;
+  padding: 10px 14px;
+  font: 12px Lucida Grande;
+  text-decoration: none;
+  display: block;
+}
+
+.Special_content a:hover {
+  background-color: black;
+  color: white
+}
+
+.Special:hover .Special_content {
+  display: block;
+}
+
+.Special:hover .Specialbtn{
+  background-color: black;
+  color: white;
+}
+
+.Helpbtn{
+  width: 50px;
+  background-color: #e4e3e5;
+  color: black;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  height: 28px;
+}
+
+.Help{
+  
+  position: relative;
+  display: inline-block; 
+}
+
+.Help_content {
+  display: none;
+  position: absolute;
+  background-color: #e4e3e5;
+  min-width: 135px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 13;
+  border: solid 1.5px black;
+  border-right: solid 2.5px black;
+  border-bottom: solid 2.5px black;
+}
+
+.Help_content a {
+  color: black;
+  padding: 10px 14px;
+  font: 12px Lucida Grande;
+  text-decoration: none;
+  display: block;
+}
+
+.Help_content a:hover {
+  background-color: black;
+  color: white
+}
+
+.Help:hover .Help_content {
+  display: block;
+}
+
+.Help:hover .Helpbtn{
+  background-color: black;
+  color: white;
+}
+
+.Made_By_Fahim{
+  color: black;
+  padding: 10px 14px;
+  font: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.mac-modal {
+  top: 50px;
+  left: 100px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 7px;
+  width: max-content;
+  height: max-content;
+}
+
+.mac-modal-header{
+  position: relative;
+  right: inherit;
+  display:flex ;
+  width: 99.5%;
+  height: 27.5px;
+  background-color: rgb(223, 223, 223);
+  border-top: solid black 1.5px;
+  border-right: solid black 3px;
+  border-left: solid black 1.5px;
+}
+
+.mac-modal-subheader{
+  gap: 25%;
+  position: relative;
+  display:flex ;
+  width: 99.5%;
+  height: 27.5px;
+  background-color: rgb(223, 223, 223);
+  border-top: solid black 1.5px;
+  border-right: solid black 3px;
+  border-left: solid black 1.5px;
+  border-bottom: solid black 1.5px;
+}
+
+.line1{
+  position: absolute;
+  top: 3px;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+}
+
+.line2{
+  position: absolute;
+  top: 7px;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+}
+
+.line3{
+  position: absolute;
+  top: 11px;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+}
+
+.line4{
+  position: absolute;
+  top: 15px;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+}
+
+.line5{
+  position: absolute;
+  top: 19px;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+}
+
+.line6{
+  position: absolute;
+  top: 23px;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+}
+
+.line7{
+  position: absolute;
+  top: 25px;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+}
+
+
+.macintoshHD{
+  padding: 5px;
+  background-color: rgb(223, 223, 223);
+  margin:auto;
+  position: relative;
+  font-size: 16px;
+}
+
+.mac-modal-subheader-content1{
+  background-color: rgb(223, 223, 223);
+  margin:auto;
+  position: relative;
+  font-size: 12px;
+}
+
+.mac-modal-subheader-content2{
+  left: 4%;
+  background-color: rgb(223, 223, 223);
+  margin:auto;
+  position: relative;
+  font-size: 12px;
+}
+
+.mac-modal-subheader-content3{
+  background-color: rgb(223, 223, 223);
+  margin:auto;
+  position: relative;
+  font-size: 12px;
+}
+
+.mac-modal-close{
+  background-color: rgb(223, 223, 223);
+  margin-top: 1.7px;
+  margin-left: 3px;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-close-window-24.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+.mac-modal-minimize{
+  background-color: rgb(223, 223, 223);
+  margin-top: 1.7px;
+  margin-right: 3px;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-minimize-window-24.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+.mac-modal_content {
+  text-align: center;
+  min-width: 700px;
+  min-height: 300px;
+  max-width: 900px;
+  max-height: 400px;
+  background-color: white;
+  position: relative;
+  border-bottom: solid black 3px;
+  border-right: solid black 3px;
+  border-left: solid black 1.5px;
+  z-index: 2;
+  resize: both;
+  overflow: scroll;
+}
+
+.mac-mini-folder-btn{
+  margin: 0 auto;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-mini-50.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.macintosh-label{
+  text-align: center;
+  font-size: 12px;
+  background-color: rgb(223, 223, 223);
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.mac-mini-folder{
+  display: none;
+  left: 880px;
+  top: 10px;
+  position: absolute;
+  padding: 7px;
+}
+
+.mac-mini-folder :hover {
+  background-color: rgb(173, 189, 224);
+}
+
+.mac-trash-can-btn{
+  margin: 0 auto;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-trash-can-50.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.trash-label{
+  text-align: center;
+  font-size: 12px;
+  background-color: rgb(223, 223, 223);
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.trash-folder{
+  display: none;
+  left: 896px;
+  top: 450px;
+  position: absolute;
+  padding: 7px;
+}
+
+.trash-folder :hover {
+  background-color: rgb(173, 189, 224);
+}
+
+
+
+.application-folder-btn{
+  margin: 0 auto;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-folder-50.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.application-label{
+  text-align: center;
+  font-size: 12px;
+  background-color: rgb(223, 223, 223);
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.application-folder{
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  padding: 7px;
+}
+
+.application-folder :hover {
+  background-color: rgb(173, 189, 224);
+}
+
+
+
+
+
+
+
+
+
+
+
+.application-modal {
+  top: 20px;
+  left: 250px;
+  display: none;
+  position: absolute;
+  z-index: 3;
+  padding: 7px;
+  width: max-content;
+  height: max-content;
+}
+
+
+.application-content {
+  text-align: center;
+  min-width: 500px;
+  min-height: 350px;
+  max-width: 650px;
+  max-height: 400px;
+  background-color: white;
+  position: relative;
+  border-bottom: solid black 3px;
+  border-right: solid black 3px;
+  border-left: solid black 1.5px;
+  z-index: 2;
+  resize: both;
+  overflow: scroll;
+}
+
+.application-header{
+  position: relative;
+  right: inherit;
+  display:flex ;
+  width: 99.5%;
+  height: 27.5px;
+  background-color: rgb(223, 223, 223);
+  border-top: solid black 1.5px;
+  border-right: solid black 3px;
+  border-left: solid black 1.5px;
+}
+
+.application-close{
+  background-color: rgb(223, 223, 223);
+  margin-top: 1.7px;
+  margin-left: 3px;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-close-window-24.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+.application-minimize{
+  background-color: rgb(223, 223, 223);
+  margin-top: 1.7px;
+  margin-right: 3px;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-minimize-window-24.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+.trash-modal {
+  top: 70px;
+  left: 400px;
+  display: none;
+  position: absolute;
+  z-index: 4;
+  padding: 7px;
+  width: max-content;
+  height: max-content;
+}
+
+
+.trash-content {
+  text-align: center;
+  min-width: 500px;
+  min-height: 350px;
+  max-width: 650px;
+  max-height: 400px;
+  background-color: white;
+  position: relative;
+  border-bottom: solid black 3px;
+  border-right: solid black 3px;
+  border-left: solid black 1.5px;
+  z-index: 2;
+  resize: both;
+  overflow: scroll;
+}
+
+.trash-header{
+  position: relative;
+  right: inherit;
+  display:flex ;
+  width: 99.5%;
+  height: 27.5px;
+  background-color: rgb(223, 223, 223);
+  border-top: solid black 1.5px;
+  border-right: solid black 3px;
+  border-left: solid black 1.5px;
+}
+
+.trash-close{
+  background-color: rgb(223, 223, 223);
+  margin-top: 1.7px;
+  margin-left: 3px;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-close-window-24.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+.trash-minimize{
+  background-color: rgb(223, 223, 223);
+  margin-top: 1.7px;
+  margin-right: 3px;
+  background-image: url("/Users/fahimulgaffar/Documents/my-portfolio-website/my-app-2/public/Assets/mac-minimize-window-24.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+.Welcome {
+  display: none;
+  text-align: center;
+  font-size: 10px;
+  top: 100px;
+  left: 250px;
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  border: solid black 2px;
+  z-index: 2;
+}
+.Welcome h1{
+  padding-top: 30px;
+}
+
+.decor{
+  margin: 20px auto;
+  width: 450px;
+  height: 150px;
+  border: solid black 3px;
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: 10 10px 10px black;
+  background-color: grey;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(205, 205, 205);
+}
+
+
+
+
+

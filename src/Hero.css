@@ -1,0 +1,90 @@
+.mainnavcontainer{
+    width: 100vw;
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.herocontainercontainer{
+    top: 250px;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    display: block;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+    .Mainnav {
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    width: 1000px;
+    height: 60px;
+}
+
+.Mainnav p{
+    margin-top: 10px;
+    height: 35px;
+    width: 130px;
+    border-bottom: solid 2px cornflowerblue;
+    color: #525f7f;
+}
+
+
+.Mainnav p:hover{
+    color: #747fe0;
+}
+
+    .hero-description {
+        font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+        font-weight: 200;
+        font-size: 1.3em;
+        line-height: 40px;
+        color: #525f7f;
+        margin-bottom: 80px;
+        margin-top: 0px;
+    }
+
+.line-1{
+    margin-bottom: 0px;
+    font-family: Monaco,Consolas,Lucida Console,monospace;
+    color: #747fe0;
+    border-right: 40px solid rgba(255,255,255,.75);
+    font-size: 4.5em;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(16) 0s 1 normal both,
+             blinkTextCursor 1000ms steps(2) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 700px;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: #747fe0;}
+  to{border-right-color: transparent;}
+}
