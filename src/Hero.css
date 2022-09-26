@@ -9,11 +9,11 @@
 }
 
 .herocontainercontainer{
+    cursor: default;
     top: 250px;
     width: 100vw;
     display: block;
     position: absolute;
-    margin-top: 15px;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -81,7 +81,7 @@
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 700px;}
+  to{width: 70%;}
 }
 
 @keyframes blinkTextCursor{

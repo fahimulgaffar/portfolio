@@ -147,4 +147,7 @@ export function scroll(){
 }
 
 
-
+export function scrollto(){
+  var elmntToView = document.getElementById("shadow");
+  elmntToView.scrollIntoView(); 
+}

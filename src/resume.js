@@ -31,9 +31,9 @@ export function handleresumeClose(event) {
     const modal4 = document.querySelector(".section-title")
     modal4.style.display = "block";
     const modal5 = document.querySelector(".info")
-    modal5.style.display = "block";
+    modal5.style.display = "flex";
     const modal6 = document.querySelector(".footer")
-    modal6.style.display = "block";
+    modal6.style.display = "flex";
     const modal7 = document.querySelector(".Mainnav")
     modal7.style.display = "flex";
     const modal8 = document.querySelector(".hero-description")

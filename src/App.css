@@ -20,10 +20,11 @@
   overflow: scroll;
 }
 
+
 .mainshadow{
   width: 100vw;
   display: block;
-  top: 550px;
+  top: 560px;
   position: absolute;
   margin-top: 50px;
   padding-bottom: 30px;
@@ -81,8 +82,8 @@
 .animate{
   margin-top: 0%;
   height: 1px;
-  width: 187px;
-  border-right: 10px solid rgba(255,255,255,.75);
+  width: 21%;
+  border-right: 8px solid rgba(255,255,255,.75);
   animation:blinkText 1000ms steps(2) infinite normal;
 }
 

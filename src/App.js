@@ -10,7 +10,7 @@ import './readme.css'
 import './resume.css'
 import './Contacts.css'
 import './Hero.css'
-import {handleClick, handleClose, handleMinimize, handleappClose, handleappMinimize, handleappClick, handletrashMinimize, handletrashClose, handletrashClick, refresh, close} from'./btn.js'
+import {handleClick, handleClose, handleMinimize, handleappClose, handleappMinimize, handleappClick, handletrashMinimize, handletrashClose, handletrashClick, refresh, close, scrollto} from'./btn.js'
 import {handlestopwatchClick, handlestopwatchClose} from './Stopwatch.js'
 import {handleclockClick, handleclockClose} from './clock.js'
 import {handlepingpongClick, handlepingpongClose} from './pingpong.js'
@@ -25,7 +25,7 @@ import{timer, scroll} from './btn.js'
 function App() {
 
   return (
-    <div className="Background" id='bg'> 
+    <div className="Background" id='bg'>
     <div className='mainnavcontainer'>
       <div className='Mainnav'>
         <p role='button' href='#/contacts' onClick={scroll}>Contact</p>
@@ -38,7 +38,7 @@ function App() {
         <p class="line-1 anim-typewriter"><span>&#62;</span>&nbsp;Fahimul Gaffar</p>
         <div className="hero-description">
           I am currently finishing my Computer Science degree. My passion is problem solving,
-          beautiful user experiences and efficient yet reusable coading. Check out my Portfolio Website.
+          beautiful user experiences and efficient yet reusable coding. Check out my skills through this portfolio website and click on the <span style={{color: "#747fe0", fontWeight: 'bold', cursor: 'pointer'}} onClick={scrollto}>"CLICK ME TO START"</span> below in the terminal for a surprise.
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@ function App() {
 
 
     <div className='mainshadow'>
-      <div className='shadow'>
+      <div className='shadow' id='shadow'>
         <div className='terminal-nav'>
           <p><span style={{color: "#525f7f"}}>Terminal:</span></p>
         </div>
