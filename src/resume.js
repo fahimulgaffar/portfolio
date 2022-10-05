@@ -1,6 +1,7 @@
 export function handleresumeClick(event) {
-    const modal = document.querySelector(".resume-modal")
+    const modal = document.querySelector(".resume-conatiner")
     modal.style.display = "block";
+    modal.scrollIntoView();
     const modal1 = document.querySelector(".shadow")
     modal1.style.display = "none";
     const modal2 = document.querySelector(".Background")
@@ -20,7 +21,7 @@ export function handleresumeClick(event) {
   }
   
 export function handleresumeClose(event) {
-    const modal = document.querySelector(".resume-modal")
+    const modal = document.querySelector(".resume-conatiner")
     modal.style.display = "none";
     const modal1 = document.querySelector(".shadow")
     modal1.style.display = "block";

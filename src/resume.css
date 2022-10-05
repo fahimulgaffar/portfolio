@@ -27,16 +27,19 @@
     background-color: rgb(173, 189, 224);
   }
 
+  .resume-conatiner{
+    display: none;
+    width: 100vw;
+    position: absolute;
+    justify-content: center;
+  }
   
 
   .resume-modal {
-    left: 25vw;
-    display: none;
-    position: absolute;
+    margin: auto;
     z-index: 4;
     padding: 7px;
-    width: max-content;
-    height: max-content;
+    width: 1180px;
   }
   
   
@@ -44,23 +47,22 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 5px;
     text-align: left;
     width: max-content;
-    height: 94vh;
     background-color: white;
     position: relative;
     border-bottom: solid black 3px;
     border-right: solid black 3px;
     border-left: solid black 1.5px;
     z-index: 2;
-    overflow: scroll;
   }
   
   .resume-header{
     position: relative;
     right: inherit;
     display:flex ;
-    width: 99.5%;
+    width: 98.7%;
     height: 27.5px;
     background-color: rgb(223, 223, 223);
     border-top: solid black 1.5px;
@@ -81,6 +83,7 @@
   
 
   .resume{
-    width:850px;
+    
+    width:1150px;
     height:1130px;
   }

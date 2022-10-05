@@ -74,6 +74,8 @@ export function handletrashClick(event) {
 
 
 export function timer(){
+  const modal = document.querySelector(".hero-description");
+  modal.scrollIntoView();
 
   setTimeout(function() {
     const modal = document.querySelector(".shadow");
@@ -115,28 +117,90 @@ export function timer(){
 
 
 export function refresh(){
+  setTimeout(function() {
+    timer();
+    }, 7000);
   close();
-  timer();
 }
 
 export function close(){
+
+
+  setTimeout(function() {
+    const modal5 = document.querySelector(".calculator-modal");
+    modal5.style.display = 'none'
+  
+    const modal3 = document.querySelector(".clock-modal");
+    modal3.style.display = "none";
+
+    const modal4 = document.querySelector(".stopwatch-modal");
+    modal4.style.display = "none";
+
+    const modal = document.querySelector(".pingpong-modal");
+    modal.style.display = "none";
+
+    const modal8 = document.querySelector(".weather-modal");
+    modal8.style.display = "none";
+
+    const modal9 = document.querySelector(".todolist-modal");
+    modal9.style.display = "none";
+  }, 500);
+
+  setTimeout(function() {
+    const modal= document.querySelector(".application-modal");
+    modal.style.display = "none";
+  }, 1000);
+
+  setTimeout(function() {
+    const modal2 = document.querySelector(".mac-mini-folder");
+    modal2.style.display = "none";
+  
+    const modal3 = document.querySelector(".trash-folder");
+    modal3.style.display = "none";
+
+    const modal4 = document.querySelector(".mac-readme");
+    modal4.style.display = "none";
+  }, 3000);
+
+  setTimeout(function() {
+    const modal5 = document.querySelector(".mac-modal");
+    modal5.style.display = 'none'
+  
+    const modal3 = document.querySelector(".application-modal");
+    modal3.style.display = "none";
+
+    const modal4 = document.querySelector(".readme-modal");
+    modal4.style.display = "none";
+
+    const modal = document.querySelector(".trash-modal");
+    modal.style.display = "none";
+  }, 2000);
+
+
+  setTimeout(function() {
+    const modal = document.querySelector(".Goodbye");
+    modal.style.display = "block";
+  }, 4000);
+
+  setTimeout(function() {
+    const modal = document.querySelector(".Goodbye");
+    modal.style.display = "none";
+  }, 6000);
+
+
+  setTimeout(function() {
   const modal1 = document.querySelector(".Container");
     modal1.style.display = "none";
 
   const modal = document.querySelector(".nav_bar");
     modal.style.display = "none";
+  }, 7000);
 
-  const modal2 = document.querySelector(".mac-mini-folder");
-    modal2.style.display = "none";
-  
-  const modal3 = document.querySelector(".trash-folder");
-    modal3.style.display = "none";
 
-    const modal4 = document.querySelector(".mac-readme");
-    modal4.style.display = "none";
+
+
   
-  const modal5 = document.querySelector(".mac-modal");
-    modal5.style.display = 'none'
+
 }
 
 
@@ -149,5 +213,10 @@ export function scroll(){
 
 export function scrollto(){
   var elmntToView = document.getElementById("shadow");
+  elmntToView.scrollIntoView(); 
+}
+
+export function scrolltocontacts(){
+  var elmntToView = document.getElementById("contact");
   elmntToView.scrollIntoView(); 
 }

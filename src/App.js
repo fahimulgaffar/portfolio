@@ -10,7 +10,7 @@ import './readme.css'
 import './resume.css'
 import './Contacts.css'
 import './Hero.css'
-import {handleClick, handleClose, handleMinimize, handleappClose, handleappMinimize, handleappClick, handletrashMinimize, handletrashClose, handletrashClick, refresh, close, scrollto} from'./btn.js'
+import {handleClick, handleClose, handleMinimize, handleappClose, handleappMinimize, handleappClick, handletrashMinimize, handletrashClose, handletrashClick, refresh, close, scrollto, scrolltocontacts} from'./btn.js'
 import {handlestopwatchClick, handlestopwatchClose} from './Stopwatch.js'
 import {handleclockClick, handleclockClose} from './clock.js'
 import {handlepingpongClick, handlepingpongClose} from './pingpong.js'
@@ -637,13 +637,21 @@ function App() {
             </div>
 
 
+
+            <div className="Goodbye">
+              <div className='decor'>
+                <h1>Shutting down Fahimul's Macintosh...</h1>
+              </div>
+            </div>
+
+
         
         </div>
 
       </div>
     </div>
       
-      <h2 id="contact" className="section-title" data-reactid="201">Contact me!
+      <h2 id="contact" className="section-title" data-reactid="201" onClick={scrolltocontacts}>Contact me!
       <br></br>
       <span style={{display: 'block', width: '60px', borderBottom: '10px solid', margin: '0 auto', height: '30px', color: '#747FE0'}}></span>
       </h2>
@@ -658,6 +666,7 @@ function App() {
         <p>Made by Fahimul Gaffar © 2022</p>
       </div>
 
+      <div id="resume-conatiner" className="resume-conatiner">
       <div className="resume-modal">
                   <div className='resume-header' id='resume-header'>
                     <div className='line1'></div>
@@ -672,6 +681,7 @@ function App() {
                   <div className="resume-content">
                     <iframe className='resume' src="../Assets/FahimulGaffar.pdf" title="Resume"></iframe>
                   </div>
+        </div>
         </div>
 
 

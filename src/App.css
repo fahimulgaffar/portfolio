@@ -878,6 +878,27 @@
 
 
 
+.Goodbye {
+  display: none;
+  text-align: center;
+  font-size: 10px;
+  top: 100px;
+  left: 250px;
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  border: solid black 2px;
+  z-index: 2;
+}
+.Goodbye h1{
+  padding-top: 30px;
+}
+
+
+
+
+
 
 
 ::-webkit-scrollbar {

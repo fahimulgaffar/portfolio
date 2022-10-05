@@ -1,13 +1,31 @@
+var arrow_keys_handler = function(e) {
+	switch(e.code){
+		case "ArrowUp": case "ArrowDown": case "ArrowLeft": case "ArrowRight": 
+			case "Space": e.preventDefault(); break;
+		default: break;
+	}
+};
+
+
 export function handlepingpongClick(event) {
+	window.addEventListener("keydown", arrow_keys_handler, false);
+
     const modal = document.querySelector(".pingpong-modal")
     modal.style.display = "block";
     Pong.initialize();
   }
   
 export function handlepingpongClose(event) {
+	window.removeEventListener("keydown", arrow_keys_handler, false);
     const modal = document.querySelector(".pingpong-modal")
     modal.style.display = "none";
 }
+
+
+
+
+
+
 
 
 
